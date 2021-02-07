@@ -54,7 +54,7 @@ a:hover {
 //
 
 .container {
-  max-width: 980px;
+  max-width: 1170px;
 }
 
 .main {
@@ -81,6 +81,10 @@ a:hover {
   font-size: 32px;
 }
 
+.app-name {
+  margin-right: 8px;
+}
+
 .app-icon {
   display: block;
   margin: 0 auto 10px;
@@ -98,39 +102,15 @@ a:hover {
 //
 // Download Buttons
 //
-
-.download-buttons {
-  margin-bottom: 20px;
-}
-
-.download-btn {
-  margin-right: 20px;
-  margin-bottom: 20px;
-  border: none;
-  background-color: #0191FF;
-  color: #fff;
-
-  {% if site.download_button_background_color %}
-  background-color: {{ site.download_button_background_color }};
-  {% endif %}
-
-  {% if site.download_button_text_color %}
-  color: {{ site.download_button_text_color }};
-  {% endif %}
-}
-
-.download-btn:focus,
-.download-btn:hover {
-  background-color: darken(#0191FF, 20%);
-  color: #fff;
-
-  {% if site.download_button_background_color %}
-  background-color: darken({{ site.download_button_background_color }}, 20%);
-  {% endif %}
-
-  {% if site.download_button_text_color %}
-  color: {{ site.download_button_text_color }};
-  {% endif %}
+.download-appstore-btn {
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  border-bottom-left-radius: 13px;
+  width: 250px;
+  height: 64px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 //

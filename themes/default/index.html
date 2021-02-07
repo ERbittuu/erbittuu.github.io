@@ -2,62 +2,38 @@
   <div class="container">
 
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-12">
 
         <!-- Marketing -->
         <div class="marketing">
           <div class="app-meta">
-            {% if site.enable.app_icon %}
-              <img
-                class="app-icon"
-                style="min-width: 92px;"
-                height="auto"
-                {% if site.app.icon %} src="{{ site.app.icon }}"{% endif %}
-              />
-            {% endif %}
+            <img class="app-icon" style="min-width: 92px;" height="auto" {% if site.app.icon %}
+              src="{{ site.app.icon }}" {% endif %} />
             <span class="app-name">{{ site.app.name }}</span>
           </div>
 
           {% if site.marketing_header %}
-          <h2 class="marketing-header">{{ site.marketing_header }}</h2>
+          <h2 class="marketing-header col-sm-10">{{ site.marketing_header }}</h2>
           {% endif %}
 
-          <p class="marketing-desc">{{ site.marketing_desc }}</p>
-          <div class="download-buttons">
-            <a
-              class="download-btn btn btn-lg"
-              href="https://itunes.apple.com/app/id{{ site.app.ios_id }}?mt=8">
-              <i class="fa fa-apple fa-lg" aria-hidden="true"></i> App Store
-            </a>
-
-            {% if site.app.android_id %}
-            <a
-              class="download-btn btn btn-lg"
-              href="https://play.google.com/store/apps/details?id={{ site.app.android_id }}">
-              <i class="fa fa-android fa-lg" aria-hidden="true"></i> Google Play
-            </a>
-            {% endif %}
-          </div>
+          <p class="marketing-desc col-sm-10">{{ site.marketing_desc }}</p>
         </div>
+
+        
+      </div>
+      <div>
+        <img src="images/download-on-the-app-store-black.svg" alt="Download on the App Store"
+          class="download-appstore-btn">
+
+        <a href="https://itunes.apple.com/app/id{{ site.app.ios_id }}?mt=8" class="download-appstore-btn">
+        </a>
       </div>
 
-
-      <div class="col-sm-6">
+      <div class="col-sm-10">
 
         <!-- App Preview or Screenshot(s) -->
-        <div class="device {{ site.device }}">
-          {% if site.app.video %}
-               <div class="video-container">
-                <iframe src="{{ site.app.video }}" height="426.66" width="240" allowfullscreen="" frameborder="0">
-                </iframe>
-              </div>
-
-          {% else %}
-               <img
-                class="app-screenshot"
-                {% if site.app.screenshot %}src="{{ site.app.screenshot }}"{% endif %}
-               />
-          {% endif %}
+        <div class="device">
+          <img class="app-screenshot" {% if site.app.screenshot %}src="{{ site.app.screenshot }}" {% endif %} />
         </div>
       </div>
     </div>

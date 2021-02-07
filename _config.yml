@@ -10,7 +10,6 @@
 app:
   name: Drawing Pad # REQUIRED - Enter your app name
   ios_id: 1547752865 # REQUIRED - 10 Digit Numeric App ID (lookup in iTunes Connect)
-  # android_id: # Optional - Enter Android app id like: com.example.app
 
   icon: # Leave blank to auto-magically populate
   # To update use path relative to project root with no leading slash:
@@ -22,7 +21,9 @@ app:
   # e.g. images/app-favicon.png - can be .ico or .png
   # 16px or greater, square
 
-  screenshot: # Leave blank to auto-magically populate
+iphone-device-ss: iphone_ss # REQUIRED
+ipad-device-ss: ippad_ss # REQUIRED
+
   # To update use path relative to project root with no leading slash:
   # e.g. images/app-screen-640x1136.png
   # 640x1136px
@@ -42,7 +43,7 @@ app:
 #
 # Marketing
 #
-marketing_header: Create Awesome Drawing # Optional
+marketing_header: If you own an iPad or iPhone, You can get Drawing Pad today on the Apple App Store. # Optional
 marketing_desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 #
@@ -52,10 +53,10 @@ marketing_desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
 #
 social-links:
   github: https://www.github.com/erbittuu
-  facebook:
-  twitter:
+  facebook: https://www.facebook.com/erbittuu
+  twitter: https://www.twitter.com/erbittuu
   pinterest:
-  instagram:
+  instagram: https://www.instagram.com/erbittuu
   email: jyotipatel2021@yahoo.com
   youtube: # channel/<your_long_string> or <user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
@@ -68,16 +69,6 @@ enable:
   smart_app_banner: true
 
 #
-# Device
-#
-# Available devices:
-# * iphone-se-silver-vertical
-# * iphone-se-space-gray-vertical
-# * ipod-touch-blue-vertical
-#
-device: iphone-se-silver-vertical # REQUIRED
-
-#
 # Theme Settings
 #
 background_color: "#989898" # Optional
@@ -85,7 +76,7 @@ background_image: /images/backgrounds/81-usersthink-stock-image-web.jpg # Option
 text_color: white # Optional
 link_color: # Optional
 social_link_color: white # Optional
-download_button_background_color: "#0191FF" # Optional
+download_button_background_color: black # Optional
 download_button_text_color: white; # Optional
 
 #
