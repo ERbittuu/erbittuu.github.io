@@ -1,0 +1,69 @@
+{
+    "exprience": [
+        {
+            "name": "Solution Analysts Pvt Ltd",
+            "duration": "Dec 2019, (Current Company)",
+            "title": "Technical Analysts",
+            "detail": "Working in multiple projects and different domains like IoT, Industrial product, Music, E-Commerce, Music, Social, Education Game. Responsible to develop and analyze the technical feasibility of the project. Core responsibilities are Project estimation, Product architecture design, Code review, Exploring new technologies and SDKs, Creating reusable components, and App Automation. Also responsible for risk management and technical help.",
+            "achievements": [
+                "Improve my skills in iOS, flutter, node js, angular",
+                "Learned about the different processes like code review, estimation creation, team collaboration, and training.",
+                "Learned Scrum Methodology Agile."
+            ]
+        },
+        {
+            "name": "Indo-Sakura Software Japan 株式会社 (Tokyo)",
+            "duration": "May 2017 to Dec 2019",
+            "title": "Sr. Software Engineer",
+            "detail": "Responsible to develop the music based Iot project. Which is connected to the iPhone device via Bluetooth. Many musical operations need to automate like composing and extracting multiple music files, adding musical effects, adding multiple instrument sounds. It was a very good learning experience in the music appplication.",
+            "achievements": [
+                "Learned about music (Audiokit) in swift",
+                "Learned BLE IoT provisioning and communication with BLE device",
+                "Experienced Great Japanese Culture"
+            ]
+        },
+        {
+            "name": "Solution Analysts Pvt Ltd",
+            "duration": "Jul 2016 to April 2019",
+            "title": "Sr. Software Engineer",
+            "detail": "Worked on many projects like Home automation IoT, social, banking, chatting, photographic application. Responsibilities are to develop the application, collaborate with team members. creating reusable components.",
+            "achievements": [
+                "Improve my skills in Objective C, Learned Swift, and many advance swift topics",
+                "Learned to create reusable components, code structure",
+                "Learned SDK development and published, also familiar with Cocoapods and carthage"
+            ]
+        },
+        {
+            "name": "Moon Technolabs Pvt Ltd",
+            "duration": "Aug 2014 to Jun 2016",
+            "title": "Software Engineer",
+            "detail": "Worked on many MacOS based projects like Invoice management system, Fax system, and other mac utilities like mac cleaner, duplicate finder, memory cleaner. Also worked in some iPhone apps like drawing and color filling.",
+            "achievements": [
+                "Learned about iOS and macOS development",
+                "Improve my skills in Objective C, Swift"
+            ]
+        }
+    ],
+    "skills": [
+        "Flexibility",
+        "Communication",
+        "Ambitious",
+        "Teamwork",
+        "Responsible",
+        "Adaptability",
+        "Self-Starter",
+        "Problem-Solving",
+        "Organization",
+        "Assertive",
+        "Time Management",
+        "Accountable"
+    ],
+    "coding": [
+        "Swift",
+        "Objective C",
+        "C",
+        "Dart",
+        "SQL",
+        "git"
+    ]
+}
