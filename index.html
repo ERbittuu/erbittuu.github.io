@@ -3,19 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <title>Utsav Patel</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="Utsav Patel - Resume" />
+    <title id="page-title">Loading...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="description" content="" id="meta-description" />
     <meta name="keywords" content="erbittuu, portfolio, personal, drawing ios app, paint app ios, andorid ios app, app, ios, andorid" />
     <meta name="author" content="utsav" />
     <link rel="shortcut icon" href="favicon.ico">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/animate.css" type="text/css">
     <link rel="stylesheet" href="css/animations.css" type="text/css">
     <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/custom-improvements.css" type="text/css">
 
     <script src="js/modernizr.custom.js"></script>
   </head>
@@ -35,11 +41,15 @@
       <header id="site_header" class="header mobile-menu-hide">
         <div class="header-content clearfix">
           <div class="my-photo">
-            <img src="images/main.jpg" alt="image">
+            <img src="images/main.jpg" alt="Utsav Patel" class="profile-image">
+            <div class="photo-overlay">
+              <div class="status-indicator"></div>
+            </div>
           </div>
 
           <div class="site-title-block">
-            <div class="site-title">Utsav Patel</div>
+            <div class="site-title" id="header-name">Loading...</div>
+            <div class="site-subtitle" id="header-title">Loading...</div>
           </div>
 
           <!-- Navigation -->
@@ -47,16 +57,16 @@
             <!-- Main menu -->
             <ul id="nav" class="site-main-menu">
               <li>
-                <a class="pt-trigger" href="#about-me">About Me</a><!-- href value = data-id without # of .pt-page. -->
+                <a class="pt-trigger" href="#about-me" id="nav-about">Loading...</a><!-- href value = data-id without # of .pt-page. -->
               </li>
               <li>
-                <a class="pt-trigger" href="#resume">Resume</a>
+                <a class="pt-trigger" href="#resume" id="nav-resume">Loading...</a>
               </li>
               <!-- <li>
                 <a class="pt-trigger" href="#portfolio">Portfolio</a>
               </li> -->
 	      <li>
-                <a class="pt-trigger" href="#contact">Contact</a>
+                <a class="pt-trigger" href="#contact" id="nav-contact">Loading...</a>
               </li>
             </ul>
             <!-- /Main menu -->
@@ -84,10 +94,13 @@
         <div class="mobile-logo-container">
           <div class="mobile-header-image">
             <a href="#">
-                <img src="images/main.jpg" alt="image">
+                <img src="images/main.jpg" alt="Utsav Patel" class="mobile-profile-image">
             </a>
           </div>
-          <div class="mobile-site-title"><a href="#">Utsav Patel</a></div>
+          <div class="mobile-site-title">
+            <a href="#" id="mobile-name">Loading...</a>
+            <span class="mobile-subtitle" id="mobile-title">Loading...</span>
+          </div>
          </div>
 
         <a class="menu-toggle mobile-visible">
@@ -114,49 +127,20 @@
             <section class="pt-page" data-id="about-me">
               <div class="section-inner start-page-full-width">
                 <div class="start-page-full-width">
-                  <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-6">
-                        <div class="inner-content">
-                          <div class="fill-block"></div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-6">
-                      <div class="inner-content">
+                  <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10 col-xl-8">
+                      <div class="inner-content text-center">
                         <div class="hp-text-block">
                           <!-- Text rotation / Subtitle -->
-                          <div class="owl-carousel text-rotation">                                    
-                            <div class="item">
-                              <div class="sp-subtitle">Software Engineer</div>
-                            </div>
-                            <div class="item">
-                              <div class="sp-subtitle">iOS Developer</div>
-                            </div>
-                            <div class="item">
-                              <div class="sp-subtitle">macOS Developer</div>
-                            </div>
-                            <div class="item">
-                              <div class="sp-subtitle">iPadOS Developer</div>
-                            </div>
-                            <div class="item">
-                              <div class="sp-subtitle">iWatch Developer</div>
-                            </div>
-                            <div class="item">
-                              <div class="sp-subtitle">iPadOS Developer</div>
-                            </div>
-                            <div class="item">
-                              <div class="sp-subtitle">Flutter Developer</div>
-                            </div>
-                            <div class="item">
-                              <div class="sp-subtitle">Apple Developer</div>
-                            </div>
+                          <div class="owl-carousel text-rotation" id="rotating-titles">
+                            <!-- Rotating titles will be loaded dynamically from JSON -->
                           </div>
                           <!-- /Text rotation / Subtitle -->
 
-			  <h2 class="hp-main-title">Utsav Patel</h2>
-                          <p>Organized, collaborative, and highly skilled iOS and macOS engineer with <b>more than 6 years of professional experience</b> in dynamic and deadline-driven work environments.</p>
-                          <p> Analytical-minded and creative team player with the ability to develop effective and efficient solutions with zero tolerance for errors. Looking to join a progressive tech company where my technical skills will be fully harnessed.</p>
+			  <h2 class="hp-main-title" id="main-name">Loading...</h2>
+                          <div id="main-summary">Loading...</div>
                           <div class="hp-buttons">
-                            <a href="Documents/Utsav-Software-Engineer.pdf" target="_blank" class="btn btn-primary">Download CV</a>
+                            <a href="Documents/Utsav_Patel_iOS_Developer_2025.pdf" target="_blank" class="btn btn-primary">Download CV</a>
                           </div>
                         </div>
                       </div>
@@ -172,73 +156,15 @@
                     <div class="col-xs-12 col-sm-12">
                       <div class="col-inner">
                         <div class="block-title">
-                            <h3>What I Do</h3>
+                            <h3 id="about-title">Loading...</h3>
                         </div>
                       </div>
                     </div>
                   </div>
                   <!-- /Services Block Title -->  
                   <!-- Services Block -->  
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-6">
-                      <div class="col-inner">
-                        <div class="info-list-w-icon">
-                          <!-- Service Item 1 -->
-                          <div class="info-block-w-icon">
-                            <div class="ci-icon">
-                              <i class="lnr lnr-code"></i>
-                            </div>
-                            <div class="ci-text">
-                              <h4>Programming</h4>
-                              <p>I like to program in my free time, learn new stuff that helps me to understand and improve my programming skills.</p>
-                            </div>
-                          </div>
-                          <!-- /Service Item 1 -->
-
-                          <!-- Service Item 2 -->
-                          <div class="info-block-w-icon">
-                            <div class="ci-icon">
-                              <i class="lnr lnr-license"></i>
-                            </div>
-                            <div class="ci-text">
-                              <h4>Proactive</h4>
-                              <p> I like to read articles in medium, do courses, and create projects. The objective is to use what I learn in a real-world problem.</p>
-                            </div>
-                          </div>
-                          <!-- Service Item 2 -->
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6">
-                      <div class="col-inner">
-                        <div class="info-list-w-icon">
-                          <!-- Service Item 3 -->
-                          <div class="info-block-w-icon">
-                            <div class="ci-icon">
-                              <i class="lnr lnr-flag"></i>
-                            </div>
-                            <div class="ci-text">
-                              <h4>Time Management</h4>
-                              <p>I'm a very organizational person, I like to work by tasks or objectives, know what is the next step in the process to complete the work with quality. I like to use agile for software development.</p>
-                            </div>
-                          </div>
-                          <!-- Service Item 3 -->
-
-                          <!-- Service Item 4 -->
-                          <div class="info-block-w-icon">
-                            <div class="ci-icon">
-                              <i class="lnr lnr-users"></i>
-                            </div>
-                            <div class="ci-text">
-                              <h4>Teamwork </h4>
-                              <p>I enjoy working with a team, the process of solving every problem is important to deliver a good quality product. Each member of the team has the opportunity to give ideas and share knowledge.</p>
-                            </div>
-                          </div>
-                          <!-- Service Item 4 -->
-                        </div>
-                      </div>
-                    </div>
+                  <div class="row" id="services-container">
+                    <!-- Services will be loaded dynamically from JSON -->
                   </div>
                   <!-- /Services Block -->
                 </div>
@@ -250,60 +176,39 @@
             <section class="pt-page" data-id="resume">
               <div class="section-inner custom-page-content">
                 <div class="section-title-block second-style">
-                  <h2 class="section-title">Resume</h2>
-                  <h5 class="section-description">More then 6 Years of Experience</h5>
+                  <h2 class="section-title" id="resume-title">Loading...</h2>
+                  <h5 class="section-description" id="experience-years-desc">Loading...</h5>
                 </div>
 
                 <div class="section-content">
                   <div class="row">
-                    <div class="col-xs-12 col-sm-8">
+                    <div class="col-xs-12 col-md-8">
                       <div class="col-inner bs-30">
                         <div class="block-title">
-                            <h3>Education 📖</h3>
+                            <h3 id="education-title">Loading...</h3>
                         </div>
 
-                        <div class="timeline timeline-second-style bs-30 clearfix">
-                          <div class="timeline-item clearfix">
-                            <div class="left-part">
-                              <h5 class="item-period">Aug 2012- Dec 2016</h5>
-                              <span class="item-company">Charotar University of Science and Technology</span>
-                            </div>
-                            <div class="divider"></div>
-                            <div class="right-part">
-                              <h4 class="item-title">Bachelor in Computer Engineering</h4>
-                              <p>Bachelor's degree in Charotar University of Science and Technology, Gujarat 388421 (INDIA)</p>
-                            </div>
-                          </div>
+                        <div class="timeline timeline-second-style bs-30 clearfix" id="education">
+                          <!-- Education will be loaded dynamically from JSON -->
                         </div>
 
                         <div class="block-title">
-                            <h3>Experience 👨🏻‍💻<span></span></h3>
+                            <h3 id="experience-title">Loading...</h3>
                         </div>
 
-
-                          <div class="timeline timeline-second-style clearfix" id="exprience">
+                        <div class="timeline timeline-second-style clearfix" id="exprience">
                         </div>
                       </div>
                     </div>
 
-                    <div class="col-xs-12 col-sm-4">
+                    <div class="col-xs-12 col-md-4">
                       <div class="col-inner">
-
                         <div class="block-title">
-                          <h3>Personal Skills<span></span></h3>
+                          <h3>Technical Skills</h3>
                         </div>
-
-                        <div class="skills-info skills-second-style" id = "skills">
-  
-                        </div>
-
-                        <div class="block-title ts-10">
-                          <h3>Coding Skills<span></span></h3>
-                        </div>
-
-
-                        <div class="skills-info skills-second-style" id = "coding">
-                          
+                        
+                        <div class="skills-section" id="technical-skills">
+                          <!-- Technical skills will be loaded dynamically from JSON -->
                         </div>
                       </div>
                     </div>
@@ -312,7 +217,7 @@
                   <div class="row">
                     <div class="col-xs-12 col-sm-12">
                       <div class="col-inner ts-30">
-                        <a href="Documents/Utsav-Software-Engineer.pdf" target="_blank" class="btn btn-primary">Download CV</a>
+                        <a href="Documents/Utsav_Patel_iOS_Developer_2025.pdf" target="_blank" class="btn btn-primary">Download CV</a>
                       </div>
                     </div>
                   </div>
@@ -326,8 +231,8 @@
             <section class="pt-page" data-id="portfolio">
               <div class="section-inner custom-page-content">
                 <div class="section-title-block second-style">
-                  <h2 class="section-title">Portfolio</h2>
-                  <h5 class="section-description">My projects</h5>
+                  <h2 class="section-title" id="portfolio-title">Loading...</h2>
+                  <h5 class="section-description" id="portfolio-subtitle">Loading...</h5>
                 </div>
           
                 <div class="section-content">
@@ -336,20 +241,12 @@
                       <!-- Portfolio Content -->
                       <div class="portfolio-content">
 
-                        <ul class="portfolio-filters">
-                          <li class="active">
-                            <a class="filter btn btn-sm btn-link" data-group="category_all">All</a>
-                          </li>
-                          <li>
-                            <a class="filter btn btn-sm btn-link" data-group="category_python">Python</a>
-                          </li>
-                          <li>
-                            <a class="filter btn btn-sm btn-link" data-group="category_swift">Swift</a>
-                          </li>
+                        <ul class="portfolio-filters" id="portfolio-filters">
+                          <!-- Portfolio filters will be loaded dynamically from JSON -->
                         </ul>
 
                         <!-- Portfolio Grid -->
-                        <div class="portfolio-grid three-columns">
+                        <div class="portfolio-grid" data-columns="3">
                           
                           <figure class="item standard" data-groups='["category_all", "category_python"]'>
                             <div class="portfolio-item-img">
@@ -386,53 +283,89 @@
           <section class="pt-page" data-id="contact">
             <div class="section-inner custom-page-content">
               <div class="section-title-block second-style">
-                <h2 class="section-title">Contact</h2>
-                <h5 class="section-description">Get in Touch</h5>
+                <h2 class="section-title" id="contact-title">Loading...</h2>
+                <h5 class="section-description" id="contact-subtitle">Loading...</h5>
               </div>
 
               <div class="section-content">
 
                 <div class="row">
-                  <div class="col-xs-12 col-sm-3">
+                  <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="col-inner bs-30">
-                      <div class="lm-info-block gray-default">
-                        <i class="lnr lnr-phone-handset"></i>
-                        <h4> <a href="tel:+918758101444">(+91) 87 58 101444</a></h4>
-                        <span class="lm-info-block-value"></span>
-                        <span class="lm-info-block-text"></span>
+                      <div class="lm-info-block contact-card">
+                        <div class="contact-icon">
+                          <i class="lnr lnr-phone-handset"></i>
+                        </div>
+                        <div class="contact-details">
+                          <h5>Phone</h5>
+                          <h4><a href="#" id="contact-phone">Loading...</a></h4>
+                          <p>Feel free to call anytime</p>
+                        </div>
                       </div>
                     </div>
                   </div>
 
-                  <div class="col-xs-12 col-sm-3">
+                  <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="col-inner bs-30">
-                      <div class="lm-info-block gray-default">
-                        <i class="lnr lnr-map-marker"></i>
-                        <h4>Ahmedabad, India</h4>
-                        <span class="lm-info-block-value"></span>
-                        <span class="lm-info-block-text"></span>
+                      <div class="lm-info-block contact-card">
+                        <div class="contact-icon">
+                          <i class="lnr lnr-map-marker"></i>
+                        </div>
+                        <div class="contact-details">
+                          <h5>Location</h5>
+                          <h4 id="contact-location">Loading...</h4>
+                          <p>Current residence</p>
+                        </div>
                       </div>
                     </div>
                   </div>
 
-                  <div class="col-xs-12 col-sm-3">
+                  <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="col-inner bs-30">
-                      <div class="lm-info-block gray-default">
-                        <i class="lnr lnr-envelope"></i>
-                        <h4> <a href="mailto:utsavhacker@gmail.com">utsavhacker@gmail.com</a></h4>
-                        <span class="lm-info-block-value"></span>
-                        <span class="lm-info-block-text"></span>
+                      <div class="lm-info-block contact-card">
+                        <div class="contact-icon">
+                          <i class="lnr lnr-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                          <h5>Email</h5>
+                          <h4><a href="#" id="contact-email">Loading...</a></h4>
+                          <p>Send me a message</p>
+                        </div>
                       </div>
                     </div>
                   </div>
 
-                  <div class="col-xs-12 col-sm-3">
+                  <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="col-inner bs-30">
-                      <div class="lm-info-block gray-default">
-                        <i class="lnr lnr-checkmark-circle"></i>
-                        <h4>Freelance Available</h4>
-                        <span class="lm-info-block-value"></span>
-                        <span class="lm-info-block-text"></span>
+                      <div class="lm-info-block contact-card">
+                        <div class="contact-icon">
+                          <i class="lnr lnr-checkmark-circle"></i>
+                        </div>
+                        <div class="contact-details">
+                          <h5>Status</h5>
+                          <h4>Available</h4>
+                          <p>Open for opportunities</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="col-inner">
+                      <div class="social-links-section">
+                        <h4>Connect With Me</h4>
+                        <div class="social-links-grid">
+                          <a href="#" id="social-linkedin" target="_blank" class="social-link linkedin">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                          </a>
+                          <a href="#" id="social-github" target="_blank" class="social-link github">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -443,8 +376,8 @@
                 <div class=" col-xs-12 col-sm-8 offset-sm-1 offset-sm-2">
                   <div class="col-inner ts-20">
                     <div class="block-title">
-                      <h3>A job opportunity?</h3>
-                      <h4>Send me an email to: <a href="mailto:utsavhacker@gmail.com">utsavhacker@gmail.com</a></h4>
+                      <h3 id="contact-cta-text">Loading...</h3>
+                      <h4><span id="contact-cta-message">Loading...</span> <a href="#" id="footer-email">Loading...</a></h4>
                     </div>
                   </div>
                 </div>
