@@ -1,69 +1,138 @@
 {
-    "exprience": [
-        {
-            "name": "Solution Analysts Pvt Ltd",
-            "duration": "Dec 2019, (Current Company)",
-            "title": "Technical Analysts",
-            "detail": "Working in multiple projects and different domains like IoT, Industrial product, Music, E-Commerce, Music, Social, Education Game. Responsible to develop and analyze the technical feasibility of the project. Core responsibilities are Project estimation, Product architecture design, Code review, Exploring new technologies and SDKs, Creating reusable components, and App Automation. Also responsible for risk management and technical help.",
-            "achievements": [
-                "Improve my skills in iOS, flutter, node js, angular",
-                "Learned about the different processes like code review, estimation creation, team collaboration, and training.",
-                "Learned Scrum Methodology Agile."
-            ]
-        },
-        {
-            "name": "Indo-Sakura Software Japan 株式会社 (Tokyo)",
-            "duration": "May 2017 to Dec 2019",
-            "title": "Sr. Software Engineer",
-            "detail": "Responsible to develop the music based Iot project. Which is connected to the iPhone device via Bluetooth. Many musical operations need to automate like composing and extracting multiple music files, adding musical effects, adding multiple instrument sounds. It was a very good learning experience in the music appplication.",
-            "achievements": [
-                "Learned about music (Audiokit) in swift",
-                "Learned BLE IoT provisioning and communication with BLE device",
-                "Experienced Great Japanese Culture"
-            ]
-        },
-        {
-            "name": "Solution Analysts Pvt Ltd",
-            "duration": "Jul 2016 to April 2019",
-            "title": "Sr. Software Engineer",
-            "detail": "Worked on many projects like Home automation IoT, social, banking, chatting, photographic application. Responsibilities are to develop the application, collaborate with team members. creating reusable components.",
-            "achievements": [
-                "Improve my skills in Objective C, Learned Swift, and many advance swift topics",
-                "Learned to create reusable components, code structure",
-                "Learned SDK development and published, also familiar with Cocoapods and carthage"
-            ]
-        },
-        {
-            "name": "Moon Technolabs Pvt Ltd",
-            "duration": "Aug 2014 to Jun 2016",
-            "title": "Software Engineer",
-            "detail": "Worked on many MacOS based projects like Invoice management system, Fax system, and other mac utilities like mac cleaner, duplicate finder, memory cleaner. Also worked in some iPhone apps like drawing and color filling.",
-            "achievements": [
-                "Learned about iOS and macOS development",
-                "Improve my skills in Objective C, Swift"
-            ]
-        }
-    ],
-    "skills": [
-        "Flexibility",
-        "Communication",
-        "Ambitious",
-        "Teamwork",
-        "Responsible",
-        "Adaptability",
-        "Self-Starter",
-        "Problem-Solving",
-        "Organization",
-        "Assertive",
-        "Time Management",
-        "Accountable"
-    ],
-    "coding": [
-        "Swift",
-        "Objective C",
-        "C",
-        "Dart",
-        "SQL",
-        "git"
-    ]
+  "personal_info": {
+    "name": "Utsav Patel",
+    "title": "Associate Staff Engineer / Senior iOS Developer",
+    "location": "Dubai, UAE",
+    "phone": "+971 506872131",
+    "email": "utsavhacker@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/erbittuu",
+    "github": "ERbittuu (Utsav Patel)"
+  },
+  "summary": "I am an iOS Developer with over 11 years of experience designing and delivering high-quality iOS and macOS applications across banking, AR, IoT, VoIP, and e-commerce sectors. Strong expertise in Apple UI/UX standards, Swift, Objective-C, MVVM, Protocol-Oriented Programming, RxSwift, Combine, unit testing, and CI/CD. Experienced in leading and contributing to complex projects, building scalable, user-friendly, and efficient applications.",
+  "skills": {
+    "programming_languages": ["Swift", "Objective-C"],
+    "frameworks_technologies": ["UIKit", "SwiftUI", "AVFoundation", "CoreData", "Combine", "RxSwift", "Foundation", "StoreKit"],
+    "architectural_patterns": ["MVVM", "MVC", "Modular Architecture", "Protocol-Oriented Programming", "Delegation"],
+    "apis_communication": ["REST", "Firebase", "MQTT"],
+    "real_time_media": ["Socket.IO", "Agora SDK"],
+    "databases_persistence": ["Core Data", "UserDefaults", "Codable"],
+    "testing_quality": ["XCTest", "TDD", "CI/CD", "Crashlytics", "Code Reviews"],
+    "deployment_provisioning": ["Automated builds (Xcode)", "App Store provisioning", "Certificate/Profile management", "TestFlight distribution"],
+    "tools_platforms": ["Xcode", "App Store Connect", "TestFlight", "Git", "CocoaPods", "SPM", "Firebase", "JIRA"],
+    "additional_skills": ["Push Notifications", "In-App Purchases", "Universal Links", "Deep Linking", "Accessibility (a11y)", "Internationalization (i18n)", "RTL support"]
+  },
+  "experience": [
+    {
+      "company": "Nagarro",
+      "location": "Dubai, UAE",
+      "duration": "JANUARY 2022 - PRESENT",
+      "title": "Associate Staff Engineer",
+      "responsibilities": [
+        "Developed banking apps using Swift, RxSwift, SwiftUI, and Combine with MVVM architecture.",
+        "Implemented core features like transfers, credit card management, and customer experience.",
+        "Designed intuitive UI components and animations, ensured high code quality through unit testing and code reviews."
+      ]
+    },
+    {
+      "company": "Solution Analysts Pvt Ltd",
+      "location": "Ahmedabad, India",
+      "duration": "DECEMBER 2019 - JANUARY 2022",
+      "title": "Technical Analyst",
+      "responsibilities": [
+        "Developed reusable frameworks, SPM packages, and CocoaPods to enhance modularity and security.",
+        "Led proof-of-concept (POC) development and provided architectural support for cross-platform solutions using Flutter, Node.js, and Angular.",
+        "Gained experience in code reviews, automation, and writing clean, maintainable code."
+      ]
+    },
+    {
+      "company": "Indo-Sakura Software Japan 株式会社",
+      "location": "Tokyo, Japan",
+      "duration": "May 2019 - DECEMBER 2019",
+      "title": "Senior Software Engineer",
+      "responsibilities": [
+        "Developed IoT-based iOS applications for Yamaha Corporation using Objective-C and Swift.",
+        "Specialized in music instrument-related IoT solutions, focusing on seamless device integration and user experience."
+      ]
+    },
+    {
+      "company": "Solution Analysts Pvt Ltd",
+      "location": "Ahmedabad, India",
+      "duration": "JULY 2016 - APRIL 2019",
+      "title": "Senior Software Engineer",
+      "responsibilities": [
+        "Worked with Swift, media playback, WebSockets, IoT, Core Data, social media integration, push notifications, Core Bluetooth, Firebase, AdMob, custom animations, and drawing.",
+        "Applied coding standards to write clean, self-describing code."
+      ],
+      "achievements": ["Team awesome award in December 2017"]
+    },
+    {
+      "company": "Moon Technolabs Pvt Ltd",
+      "location": "Ahmedabad, India",
+      "duration": "AUGUST 2014 - JUNE 2016",
+      "title": "Software Engineer",
+      "responsibilities": [
+        "Developed iOS and macOS applications including utility, financial, and Core Graphics-based apps.",
+        "Focused on app performance optimization and created test cases for key functionalities."
+      ],
+      "achievements": ["Best Employee award of Year in 2016"]
+    }
+  ],
+  "education": {
+    "degree": "Bachelor of Technology",
+    "field": "Computer Engineering",
+    "university": "Charotar University of Science and Technology, Anand, Gujarat, India",
+    "year": 2014
+  },
+  "projects": [
+    {
+      "name": "Egyptian Banking App",
+      "description": "Full-featured banking app with transfers, recurring payments, credit card management, net worth calculation, and detailed asset/liability breakdown.",
+      "technologies": ["Swift", "RxSwift", "SwiftUI", "Combine", "MVVM"]
+    },
+    {
+      "name": "UAE Banking App",
+      "description": "Streamlined user onboarding with registration, data gathering, and personalized setup for secure first-time experience.",
+      "technologies": ["Swift", "RxSwift", "MVVM"]
+    },
+    {
+      "name": "AR-based Remote Assistant",
+      "description": "AR video calling app for industrial remote assistance, enabling drawing on live video and collaboration.",
+      "technologies": ["Swift", "ARCore", "Agora", "Socket.IO", "Kotlin", "Node.js", "Angular", "MySQL"]
+    },
+    {
+      "name": "BLE-based Music App",
+      "description": "Connected Bluetooth music case to iPhone, enabling music play, creation, customization, and export.",
+      "technologies": ["Swift", "BLE", "AV Foundation", "Audio code services"]
+    },
+    {
+      "name": "Home Automation App",
+      "description": "Smart home hub to control bulbs, fans, doors, ACs with custom automation rules and IoT cloud communication.",
+      "technologies": ["Swift", "IoT", "Wi-Fi", "MQTT"]
+    },
+    {
+      "name": "Task Management App",
+      "description": "Task management app for Chartered Accountants with offline caching, timesheets, reporting, in-app purchases, notifications.",
+      "technologies": ["Swift", "SQLite", "Socket.IO"]
+    },
+    {
+      "name": "Letter Tiles for Learning",
+      "description": "Educational iOS game for phonograms, suffixes, and word parts with drag-and-drop, audio playback, and interactive learning.",
+      "technologies": ["Swift", "Core Data", "Core Animation", "AVFoundation", "UIKit"]
+    },
+    {
+      "name": "Moon Invoice",
+      "description": "Cross-platform invoice management app with iCloud sync, PDF export, analytics dashboard, and multi-company support.",
+      "technologies": ["Objective-C", "Core Data", "CloudKit", "PDFKit", "Charts", "UIKit", "AppKit"]
+    },
+    {
+      "name": "iFax",
+      "description": "iOS and macOS faxing solution supporting multiple document formats and cloud integrations.",
+      "technologies": ["Objective-C", "PDFKit", "CloudKit", "UIKit", "AppKit", "RESTful APIs"]
+    },
+    {
+      "name": "Duplicate Finder",
+      "description": "MacOS app to find and remove duplicate files using SHA-1 and MD5 hashing with search and selection features.",
+      "technologies": ["Cocoa", "Objective-C", "SHA-1", "MD5", "AppKit"]
+    }
+  ]
 }
