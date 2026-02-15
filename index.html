@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Utsav Patel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #111111;
+            --muted: #666666;
+            --accent: #0A84FF;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0e0e0e;
+                --text: #ffffff;
+                --muted: #9a9a9a;
+                --accent: #4DA3FF;
+            }
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+                         "Helvetica Neue", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 720px;
+            padding: 80px 24px;
+        }
+
+        h1 {
+            margin: 0 0 8px 0;
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 400;
+            color: var(--muted);
+            margin-top: 0;
+        }
+
+        section {
+            margin-top: 48px;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            padding-left: 18px;
+        }
+
+        footer {
+            margin-top: 64px;
+            font-size: 14px;
+            color: var(--muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Utsav Patel</h1>
+            <h2>Senior iOS Engineer</h2>
+        </header>
+
+        <section>
+            <p>
+                I build secure, scalable Apple platform applications with strong architecture,
+                performance, and long-term maintainability in mind.
+            </p>
+        </section>
+
+        <section>
+            <h3>Core Expertise</h3>
+            <ul>
+                <li>Swift · SwiftUI · UIKit</li>
+                <li>MVVM · Clean Architecture</li>
+                <li>Concurrency (async/await, actors)</li>
+                <li>Performance Optimization</li>
+                <li>Secure Financial Applications</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Links</h3>
+            <p>
+                GitHub:
+                <a href="https://github.com/ERbittuu" target="_blank">
+                    github.com/ERbittuu
+                </a>
+            </p>
+        </section>
+
+        <footer>
+            © 2026 Utsav Patel
+        </footer>
+    </div>
+</body>
+</html>
