@@ -2,117 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Utsav Patel</title>
+    <title>Utsav Patel | Senior iOS Engineer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <style>
-        :root {
-            --bg: #ffffff;
-            --text: #111111;
-            --muted: #666666;
-            --accent: #0A84FF;
-        }
-
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --bg: #0e0e0e;
-                --text: #ffffff;
-                --muted: #9a9a9a;
-                --accent: #4DA3FF;
-            }
-        }
-
-        body {
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
-                         "Helvetica Neue", Arial, sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.6;
-            display: flex;
-            justify-content: center;
-        }
-
-        .container {
-            max-width: 720px;
-            padding: 80px 24px;
-        }
-
-        h1 {
-            margin: 0 0 8px 0;
-            font-size: 32px;
-            font-weight: 600;
-        }
-
-        h2 {
-            font-size: 18px;
-            font-weight: 400;
-            color: var(--muted);
-            margin-top: 0;
-        }
-
-        section {
-            margin-top: 48px;
-        }
-
-        a {
-            color: var(--accent);
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        ul {
-            padding-left: 18px;
-        }
-
-        footer {
-            margin-top: 64px;
-            font-size: 14px;
-            color: var(--muted);
-        }
-    </style>
+    <meta name="description" content="Senior iOS Engineer specializing in scalable architecture, performance, and secure Apple platform applications.">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Utsav Patel</h1>
-            <h2>Senior iOS Engineer</h2>
-        </header>
 
-        <section>
-            <p>
-                I build secure, scalable Apple platform applications with strong architecture,
-                performance, and long-term maintainability in mind.
-            </p>
-        </section>
+<header class="topbar">
+    <div class="container nav">
+        <div class="logo">UP</div>
+        <div class="nav-actions">
+            <button id="themeToggle" class="ghost-btn">Toggle Theme</button>
+        </div>
+    </div>
+</header>
 
-        <section>
-            <h3>Core Expertise</h3>
+<main class="container">
+
+    <section class="hero">
+        <h1>Utsav Patel</h1>
+        <p class="subtitle">Senior iOS Engineer</p>
+        <p class="description">
+            I build secure, scalable Apple platform applications focused on clean architecture,
+            concurrency safety, and long-term maintainability.
+        </p>
+
+        <div class="cta-group">
+            <a href="https://github.com/ERbittuu" target="_blank" class="primary-btn">
+                View GitHub
+            </a>
+            <a href="#" class="ghost-btn">
+                Download Resume
+            </a>
+        </div>
+    </section>
+
+    <section class="grid">
+        <div class="card">
+            <h2>Architecture</h2>
+            <ul>
+                <li>MVVM + Clean Architecture</li>
+                <li>Modular Codebases</li>
+                <li>Protocol-Oriented Design</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Platform</h2>
             <ul>
                 <li>Swift · SwiftUI · UIKit</li>
-                <li>MVVM · Clean Architecture</li>
-                <li>Concurrency (async/await, actors)</li>
-                <li>Performance Optimization</li>
-                <li>Secure Financial Applications</li>
+                <li>Combine · Async/Await · Actors</li>
+                <li>Performance & Memory Tuning</li>
             </ul>
-        </section>
+        </div>
 
-        <section>
-            <h3>Links</h3>
-            <p>
-                GitHub:
-                <a href="https://github.com/ERbittuu" target="_blank">
-                    github.com/ERbittuu
-                </a>
-            </p>
-        </section>
+        <div class="card">
+            <h2>Domain</h2>
+            <ul>
+                <li>Enterprise & Banking Apps</li>
+                <li>Secure Networking</li>
+                <li>Compliance-driven Systems</li>
+            </ul>
+        </div>
+    </section>
 
-        <footer>
-            © 2026 Utsav Patel
-        </footer>
+</main>
+
+<footer>
+    <div class="container footer-inner">
+        © 2026 Utsav Patel
     </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
