@@ -1,45 +1,42 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Utsav Patel | Senior iOS Engineer</title>
+<title>Utsav Patel | Senior iOS Engineer</title>
+<meta name="description"
+      content="Senior iOS Engineer building secure, scalable enterprise-grade Apple platform systems." />
 
-    <meta name="description"
-          content="Senior iOS Engineer specializing in secure, scalable enterprise and financial systems. Architecture-driven. Consulting available." />
+<meta name="theme-color" content="#0f172a" />
 
-    <meta name="theme-color" content="#f3f6fb" />
-
-    <!-- OpenGraph -->
-    <meta property="og:title" content="Utsav Patel | Senior iOS Engineer" />
-    <meta property="og:description" content="Architecture-driven iOS systems. Secure. Scalable. Enterprise-ready." />
-    <meta property="og:type" content="website" />
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary" />
-
-    <link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
+
+<!-- ===== Initial Loader ===== -->
+<div id="loader" class="loader">
+    <div class="loader-inner">
+        <div class="loader-dot"></div>
+        <div class="loader-text">Loading</div>
+    </div>
+</div>
 
 <header class="header">
     <div class="container header-inner">
-        <div class="brand-block">
-            <div class="name">Utsav Patel</div>
-            <div class="role">Senior iOS Engineer</div>
+        <div class="brand">
+            <div class="brand-name">Utsav Patel</div>
+            <div class="brand-role">Senior iOS Engineer</div>
         </div>
 
-        <nav class="nav-links" aria-label="Primary Navigation">
+        <nav class="nav">
             <a href="#about">About</a>
             <a href="#expertise">Expertise</a>
             <a href="#contact">Contact</a>
 
-            <a href="https://github.com/ERbittuu" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://www.linkedin.com/in/erbittuu/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-
-            <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">
-                <span id="themeIcon">🌙</span>
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+                <span id="themeIcon">☾</span>
             </button>
         </nav>
     </div>
@@ -47,99 +44,97 @@
 
 <main>
 
+<!-- HERO -->
 <section class="hero container">
-    <h1>
-        Architecture-Driven iOS Systems.<br />
-        Secure. Scalable. Enterprise-Ready.
-    </h1>
+    <div class="hero-left">
+        <h1>
+            Engineering Secure,<br />
+            Scalable iOS Systems<br />
+            for Enterprise.
+        </h1>
 
-    <p class="hero-sub">
-        12+ years designing and delivering high-reliability financial
-        and enterprise applications across Apple platforms with strong
-        emphasis on clean architecture, concurrency safety,
-        performance engineering, and long-term maintainability.
-    </p>
+        <p>
+            12+ years delivering high-reliability financial and enterprise
+            applications with architecture discipline,
+            structured concurrency, and long-term maintainability.
+        </p>
 
-    <a href="mailto:utsavhacker@gmail.com" class="primary-btn">
-        Get in Touch
-    </a>
+        <div class="hero-actions">
+            <a href="mailto:utsavhacker@gmail.com" class="btn-primary">
+                Get in Touch
+            </a>
+            <a href="#expertise" class="btn-secondary">
+                View Expertise
+            </a>
+        </div>
+    </div>
+
+    <div class="hero-right">
+        <div class="hero-card">
+            <div class="metric">
+                <div class="metric-value">12+</div>
+                <div class="metric-label">Years Experience</div>
+            </div>
+
+            <div class="metric">
+                <div class="metric-value">Enterprise</div>
+                <div class="metric-label">Banking & Finance</div>
+            </div>
+
+            <div class="metric">
+                <div class="metric-value">Architecture</div>
+                <div class="metric-label">Consulting & Reviews</div>
+            </div>
+        </div>
+    </div>
 </section>
 
-<section id="about" class="about container">
-    <div class="about-left">
+<!-- ABOUT -->
+<section id="about" class="section-alt">
+    <div class="container narrow">
         <h2>About</h2>
         <p>
-            I build production-grade iOS systems focused on modular design,
-            structured concurrency, performance optimization, and
-            compliance-driven development tailored for enterprise and
-            banking environments.
-        </p>
-        <p>
-            My engineering approach prioritizes scalability,
-            thread safety, resilient networking layers,
-            offline-first strategies, and disciplined CI/CD pipelines
-            to ensure reliability at scale.
+            I build production-grade Apple platform systems focused on modular design,
+            performance engineering, compliance, and scalability.
         </p>
     </div>
+</section>
 
-    <div class="about-right">
-        <div class="stat">
-            <div class="stat-value">12+ Years</div>
-            <div class="stat-label">iOS Engineering Experience</div>
-        </div>
-        <div class="stat">
-            <div class="stat-value">Enterprise & Banking</div>
-            <div class="stat-label">Domain Expertise</div>
-        </div>
-        <div class="stat">
-            <div class="stat-value">Architecture Consulting</div>
-            <div class="stat-label">Advisory & System Reviews</div>
+<!-- EXPERTISE -->
+<section id="expertise" class="section">
+    <div class="container">
+        <h2>Core Expertise</h2>
+
+        <div class="card-grid">
+            <div class="card">
+                <h3>Architecture & System Design</h3>
+                <p>Clean Architecture, modular systems, scalable structure for enterprise apps.</p>
+            </div>
+
+            <div class="card">
+                <h3>Modern Apple Platform</h3>
+                <p>Swift, SwiftUI, UIKit, Combine, async/await, actors — strict thread-safety discipline.</p>
+            </div>
+
+            <div class="card">
+                <h3>Security & Reliability</h3>
+                <p>Secure networking, compliance-aware implementations, offline-first resilience.</p>
+            </div>
         </div>
     </div>
 </section>
 
-<section id="expertise" class="expertise container">
-    <h2>Core Expertise</h2>
+<!-- CONTACT -->
+<section id="contact" class="section-alt">
+    <div class="container narrow">
+        <h2>Contact</h2>
 
-    <div class="expertise-grid">
-        <article class="expertise-card">
-            <h3>Architecture & System Design</h3>
-            <p>Clean Architecture, modular systems, scalable structure for enterprise apps.</p>
-        </article>
-
-        <article class="expertise-card">
-            <h3>Modern Apple Platform</h3>
-            <p>Swift, SwiftUI, UIKit, Combine, async/await, actors — implemented with discipline.</p>
-        </article>
-
-        <article class="expertise-card">
-            <h3>Security & Reliability</h3>
-            <p>Secure networking, compliance-aware systems, offline-first resilience.</p>
-        </article>
-    </div>
-</section>
-
-<section id="contact" class="contact container">
-    <h2>Contact</h2>
-
-    <p class="hero-sub">
-        Available for architecture consulting, technical advisory,
-        system design reviews, and performance audits.
-    </p>
-
-    <div class="contact-grid">
-        <a href="mailto:utsavhacker@gmail.com" class="contact-btn">
-            📩 utsavhacker@gmail.com
-        </a>
-        <a href="https://github.com/ERbittuu" target="_blank" rel="noopener noreferrer" class="contact-btn">
-            💻 GitHub
-        </a>
-        <a href="https://www.linkedin.com/in/erbittuu/" target="_blank" rel="noopener noreferrer" class="contact-btn">
-            🔗 LinkedIn
-        </a>
-        <a href="https://medium.com/@erbittuu" target="_blank" rel="noopener noreferrer" class="contact-btn">
-            ✍️ Medium
-        </a>
+        <div class="contact-row">
+            <a href="mailto:utsavhacker@gmail.com">Email</a>
+            <a href="https://github.com/ERbittuu" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/erbittuu/" target="_blank">LinkedIn</a>
+            <a href="https://medium.com/@erbittuu" target="_blank">Medium</a>
+        </div>
     </div>
 </section>
 
