@@ -105,20 +105,23 @@ main {
 /* Hero Meta Cards */
 
 .hero-meta {
-    margin-top: 36px;
+    margin-top: 40px;
     display: flex;
-    gap: 14px;
-    justify-content: center;
     flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .meta-card {
     padding: 8px 14px;
     font-size: 12px;
     font-weight: 600;
-    letter-spacing: 0.6px;
+    letter-spacing: 0.5px;
     text-transform: uppercase;
-    border-radius: 999px;
+    border-radius: 10px;
     background: var(--surface);
     border: 1px solid var(--border);
     color: var(--primary);
@@ -127,6 +130,7 @@ main {
 
 .meta-card:hover {
     border-color: var(--primary);
+    background: rgba(59,130,246,0.08);
     transform: translateY(-2px);
 }
 
