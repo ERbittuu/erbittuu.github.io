@@ -1,30 +1,27 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
 <title>Utsav Patel | Senior iOS Engineer</title>
+
 <meta name="description"
       content="Senior iOS Engineer building secure, scalable enterprise-grade Apple platform systems." />
 
-<meta name="theme-color" content="#0f172a" />
-
+<meta name="theme-color" content="#0b1220" />
 <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
-<!-- ===== Initial Loader ===== -->
+<!-- Loader -->
 <div id="loader" class="loader">
-    <div class="loader-inner">
-        <div class="loader-dot"></div>
-        <div class="loader-text">Loading</div>
-    </div>
+    <div class="loader-dot"></div>
 </div>
 
 <header class="header">
     <div class="container header-inner">
+
         <div class="brand">
             <div class="brand-name">Utsav Patel</div>
             <div class="brand-role">Senior iOS Engineer</div>
@@ -32,108 +29,111 @@
 
         <nav class="nav">
             <a href="#about">About</a>
-            <a href="#expertise">Expertise</a>
             <a href="#contact">Contact</a>
 
-            <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
-                <span id="themeIcon">☾</span>
+            <a href="resume.pdf" class="resume-btn" download>
+                Download CV
+            </a>
+
+            <button id="themeToggle" class="theme-toggle">
+                <span id="themeIcon">☀</span>
             </button>
         </nav>
+
     </div>
 </header>
 
 <main>
 
-<!-- HERO -->
-<section class="hero container">
+<!-- HERO + EXPERTISE ABOVE FOLD -->
+<section class="hero container reveal">
+
     <div class="hero-left">
         <h1>
-            Engineering Secure,<br />
-            Scalable iOS Systems<br />
-            for Enterprise.
+            Secure & Scalable<br>
+            iOS Architecture<br>
+            for Enterprise Systems
         </h1>
 
         <p>
-            12+ years delivering high-reliability financial and enterprise
-            applications with architecture discipline,
-            structured concurrency, and long-term maintainability.
+            12+ years building financial-grade Apple platform applications
+            with clean architecture, concurrency discipline,
+            and long-term maintainability.
         </p>
 
         <div class="hero-actions">
             <a href="mailto:utsavhacker@gmail.com" class="btn-primary">
-                Get in Touch
+                Contact
             </a>
-            <a href="#expertise" class="btn-secondary">
-                View Expertise
+            <a href="#about" class="btn-secondary">
+                Learn More
             </a>
         </div>
     </div>
 
     <div class="hero-right">
+
         <div class="hero-card">
             <div class="metric">
-                <div class="metric-value">12+</div>
-                <div class="metric-label">Years Experience</div>
+                <span class="metric-value">12+</span>
+                <span class="metric-label">Years Experience</span>
             </div>
 
             <div class="metric">
-                <div class="metric-value">Enterprise</div>
-                <div class="metric-label">Banking & Finance</div>
+                <span class="metric-value">Banking</span>
+                <span class="metric-label">Enterprise Domain</span>
             </div>
 
             <div class="metric">
-                <div class="metric-value">Architecture</div>
-                <div class="metric-label">Consulting & Reviews</div>
+                <span class="metric-value">Architecture</span>
+                <span class="metric-label">Consulting & Reviews</span>
             </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- COMPACT EXPERTISE -->
+<section class="expertise container reveal">
+    <div class="card-grid">
+        <div class="card">
+            <h3>Architecture & Design</h3>
+            <p>Modular systems, Clean Architecture, scalable codebases.</p>
+        </div>
+
+        <div class="card">
+            <h3>Modern Apple Stack</h3>
+            <p>Swift, SwiftUI, UIKit, Combine, async/await, actors.</p>
+        </div>
+
+        <div class="card">
+            <h3>Security & Reliability</h3>
+            <p>Compliance-driven development & resilient networking layers.</p>
         </div>
     </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="section-alt">
+<section id="about" class="section-alt reveal">
     <div class="container narrow">
         <h2>About</h2>
         <p>
-            I build production-grade Apple platform systems focused on modular design,
-            performance engineering, compliance, and scalability.
+            I design production-grade Apple platform systems prioritizing
+            scalability, thread safety, performance engineering,
+            and maintainable long-term architecture.
         </p>
     </div>
 </section>
 
-<!-- EXPERTISE -->
-<section id="expertise" class="section">
-    <div class="container">
-        <h2>Core Expertise</h2>
-
-        <div class="card-grid">
-            <div class="card">
-                <h3>Architecture & System Design</h3>
-                <p>Clean Architecture, modular systems, scalable structure for enterprise apps.</p>
-            </div>
-
-            <div class="card">
-                <h3>Modern Apple Platform</h3>
-                <p>Swift, SwiftUI, UIKit, Combine, async/await, actors — strict thread-safety discipline.</p>
-            </div>
-
-            <div class="card">
-                <h3>Security & Reliability</h3>
-                <p>Secure networking, compliance-aware implementations, offline-first resilience.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- CONTACT -->
-<section id="contact" class="section-alt">
+<section id="contact" class="section reveal">
     <div class="container narrow">
         <h2>Contact</h2>
-
         <div class="contact-row">
             <a href="mailto:utsavhacker@gmail.com">Email</a>
             <a href="https://github.com/ERbittuu" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/erbittuu/" target="_blank">LinkedIn</a>
-            <a href="https://medium.com/@erbittuu" target="_blank">Medium</a>
+            <a href="https://linkedin.com/in/erbittuu" target="_blank">LinkedIn</a>
         </div>
     </div>
 </section>

@@ -15,11 +15,7 @@
         if (saved) {
             applyTheme(saved);
         } else {
-            applyTheme(
-                window.matchMedia("(prefers-color-scheme: dark)").matches
-                    ? "dark"
-                    : "light"
-            );
+            applyTheme("dark"); // default dark
         }
     }
 
@@ -29,9 +25,21 @@
     });
 
     window.addEventListener("load", () => {
-        setTimeout(() => {
-            loader.classList.add("hidden");
-        }, 400);
+        loader.classList.add("hidden");
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll(".reveal").forEach(el => {
+        observer.observe(el);
     });
 
     initTheme();
