@@ -1,16 +1,19 @@
 const toggle = document.getElementById("themeToggle");
+const icon = document.getElementById("themeIcon");
 const root = document.documentElement;
 
-function setTheme(theme) {
+function applyTheme(theme) {
     if (theme === "dark") {
         root.setAttribute("data-theme", "dark");
+        icon.textContent = "☀️";
     } else {
         root.removeAttribute("data-theme");
+        icon.textContent = "🌙";
     }
     localStorage.setItem("theme", theme);
 }
 
-function getPreferredTheme() {
+function detectTheme() {
     const saved = localStorage.getItem("theme");
     if (saved) return saved;
     return window.matchMedia("(prefers-color-scheme: dark)").matches
@@ -18,11 +21,11 @@ function getPreferredTheme() {
         : "light";
 }
 
-setTheme(getPreferredTheme());
+applyTheme(detectTheme());
 
 toggle.addEventListener("click", () => {
     const current = root.getAttribute("data-theme") === "dark"
         ? "dark"
         : "light";
-    setTheme(current === "dark" ? "light" : "dark");
+    applyTheme(current === "dark" ? "light" : "dark");
 });
