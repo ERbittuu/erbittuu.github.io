@@ -8,16 +8,9 @@
 <meta name="description"
       content="Senior iOS Engineer building secure, scalable enterprise-grade Apple platform systems." />
 
-<meta name="theme-color" content="#0b1220" />
 <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-
-<!-- Loader -->
-<div id="loader" class="loader">
-    <div class="loader-dot"></div>
-</div>
 
 <header class="header">
     <div class="container header-inner">
@@ -31,11 +24,11 @@
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
 
-            <a href="resume.pdf" class="resume-btn" download>
+            <a href="resume.pdf" class="btn-outline" download>
                 Download CV
             </a>
 
-            <button id="themeToggle" class="theme-toggle">
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
                 <span id="themeIcon">☀</span>
             </button>
         </nav>
@@ -45,18 +38,17 @@
 
 <main>
 
-<!-- HERO + EXPERTISE ABOVE FOLD -->
-<section class="hero container reveal">
+<!-- HERO -->
+<section class="hero container">
 
     <div class="hero-left">
         <h1>
-            Secure & Scalable<br>
-            iOS Architecture<br>
-            for Enterprise Systems
+            Secure & Scalable iOS<br>
+            Architecture for Enterprise Systems
         </h1>
 
-        <p>
-            12+ years building financial-grade Apple platform applications
+        <p class="hero-sub">
+            12+ years delivering financial-grade Apple platform applications
             with clean architecture, concurrency discipline,
             and long-term maintainability.
         </p>
@@ -65,76 +57,100 @@
             <a href="mailto:utsavhacker@gmail.com" class="btn-primary">
                 Contact
             </a>
-            <a href="#about" class="btn-secondary">
-                Learn More
-            </a>
         </div>
     </div>
 
     <div class="hero-right">
+        <div class="stat-card">
 
-        <div class="hero-card">
-            <div class="metric">
-                <span class="metric-value">12+</span>
-                <span class="metric-label">Years Experience</span>
+            <div class="stat">
+                <!-- Bank Icon -->
+                <svg viewBox="0 0 24 24" class="icon">
+                    <path d="M3 10h18M5 10v8M9 10v8M15 10v8M19 10v8M3 18h18M12 3l9 5H3l9-5z"/>
+                </svg>
+                <div>
+                    <div class="stat-title">Enterprise Banking</div>
+                    <div class="stat-sub">Domain Experience</div>
+                </div>
             </div>
 
-            <div class="metric">
-                <span class="metric-value">Banking</span>
-                <span class="metric-label">Enterprise Domain</span>
+            <div class="stat">
+                <!-- Architecture Icon -->
+                <svg viewBox="0 0 24 24" class="icon">
+                    <rect x="3" y="3" width="7" height="7"/>
+                    <rect x="14" y="3" width="7" height="7"/>
+                    <rect x="3" y="14" width="7" height="7"/>
+                    <rect x="14" y="14" width="7" height="7"/>
+                </svg>
+                <div>
+                    <div class="stat-title">Architecture Consulting</div>
+                    <div class="stat-sub">System Reviews</div>
+                </div>
             </div>
 
-            <div class="metric">
-                <span class="metric-value">Architecture</span>
-                <span class="metric-label">Consulting & Reviews</span>
+            <div class="stat">
+                <!-- Rocket Icon -->
+                <svg viewBox="0 0 24 24" class="icon">
+                    <path d="M12 2c4 0 6 4 6 8l4 4-4 2-2 4-4-4c-4 0-8-2-8-6 0-6 4-8 8-8z"/>
+                </svg>
+                <div>
+                    <div class="stat-title">12+ Years</div>
+                    <div class="stat-sub">iOS Engineering</div>
+                </div>
             </div>
+
         </div>
-
     </div>
 
 </section>
 
-<!-- COMPACT EXPERTISE -->
-<section class="expertise container reveal">
-    <div class="card-grid">
-        <div class="card">
-            <h3>Architecture & Design</h3>
-            <p>Modular systems, Clean Architecture, scalable codebases.</p>
-        </div>
+<!-- EXPERTISE -->
+<section class="expertise container">
 
-        <div class="card">
-            <h3>Modern Apple Stack</h3>
-            <p>Swift, SwiftUI, UIKit, Combine, async/await, actors.</p>
-        </div>
-
-        <div class="card">
-            <h3>Security & Reliability</h3>
-            <p>Compliance-driven development & resilient networking layers.</p>
-        </div>
+    <div class="card">
+        <svg viewBox="0 0 24 24" class="icon-large">
+            <path d="M4 4h16v16H4z"/>
+        </svg>
+        <h3>Architecture & Design</h3>
+        <p>Modular systems, Clean Architecture, scalable enterprise codebases.</p>
     </div>
+
+    <div class="card">
+        <svg viewBox="0 0 24 24" class="icon-large">
+            <circle cx="12" cy="12" r="9"/>
+        </svg>
+        <h3>Modern Apple Stack</h3>
+        <p>Swift, SwiftUI, UIKit, Combine, async/await, actors.</p>
+    </div>
+
+    <div class="card">
+        <svg viewBox="0 0 24 24" class="icon-large">
+            <path d="M12 2l8 4v6c0 5-3 8-8 10-5-2-8-5-8-10V6l8-4z"/>
+        </svg>
+        <h3>Security & Reliability</h3>
+        <p>Compliance-driven development & resilient networking layers.</p>
+    </div>
+
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="section-alt reveal">
-    <div class="container narrow">
-        <h2>About</h2>
-        <p>
-            I design production-grade Apple platform systems prioritizing
-            scalability, thread safety, performance engineering,
-            and maintainable long-term architecture.
-        </p>
-    </div>
+<section id="about" class="about container">
+    <h2>About</h2>
+    <p>
+        I design production-grade Apple platform systems prioritizing
+        scalability, thread safety, performance engineering,
+        and maintainable long-term architecture.
+    </p>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section reveal">
-    <div class="container narrow">
-        <h2>Contact</h2>
-        <div class="contact-row">
-            <a href="mailto:utsavhacker@gmail.com">Email</a>
-            <a href="https://github.com/ERbittuu" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/erbittuu" target="_blank">LinkedIn</a>
-        </div>
+<section id="contact" class="contact container">
+    <h2>Contact</h2>
+
+    <div class="contact-row">
+        <a href="mailto:utsavhacker@gmail.com">Email</a>
+        <a href="https://github.com/ERbittuu" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/erbittuu" target="_blank">LinkedIn</a>
     </div>
 </section>
 
