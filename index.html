@@ -6,7 +6,7 @@
 <title>Utsav Patel | Senior iOS Engineer</title>
 
 <meta name="description"
-      content="Senior iOS Engineer designing production-grade iOS systems for enterprise and financial environments." />
+      content="Senior iOS Engineer designing secure, scalable, production-grade iOS systems for enterprise and financial environments." />
 
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet">
 <link rel="stylesheet" href="styles.css" />
@@ -15,14 +15,12 @@
 
 <header class="header">
     <div class="container header-inner">
-
         <div class="brand">
             <div class="brand-name">Utsav Patel</div>
             <div class="brand-role">Senior iOS Engineer</div>
         </div>
 
         <nav class="nav">
-
             <a href="mailto:utsavhacker@gmail.com" class="icon-link" title="Email">
                 <span class="material-symbols-rounded">mail</span>
             </a>
@@ -34,13 +32,7 @@
             <a href="https://linkedin.com/in/erbittuu" target="_blank" class="icon-link" title="LinkedIn">
                 <span class="material-symbols-rounded">work</span>
             </a>
-
-            <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
-                <span id="themeIcon" class="material-symbols-rounded">light_mode</span>
-            </button>
-
         </nav>
-
     </div>
 </header>
 
@@ -49,17 +41,21 @@
 <!-- HERO -->
 <section class="hero container">
 
-    <h3>
-        Senior iOS Engineer (12+ yrs) building mission-critical Apple apps for banking & enterprise. Expert in Clean Architecture, Swift concurrency, and performance.
-    </h2>
+    <h1 class="hero-title">
+        Engineering Mission-Critical iOS Systems for Enterprise & Finance
+    </h1>
 
     <p class="hero-sub">
-        I prioritize architectural clarity over short-term velocity,
-        favor structured concurrency over callback complexity,
-        and design systems that evolve safely over time.
-        My focus is long-term maintainability, predictable performance,
-        and production reliability at scale.
-        </p>
+        Senior iOS Engineer with 12+ years building secure, scalable Apple platform applications.
+        I design modular architectures, enforce concurrency correctness, and deliver production-grade
+        systems optimized for reliability, performance, and long-term maintainability.
+    </p>
+
+    <div class="hero-meta">
+        <div class="meta-card">Swift · SwiftUI · UIKit</div>
+        <div class="meta-card">Clean Architecture · MVVM</div>
+        <div class="meta-card">Concurrency · Performance · Security</div>
+    </div>
 
 </section>
 
@@ -69,29 +65,37 @@
     <div class="card">
         <span class="material-symbols-rounded icon-large">grid_view</span>
         <h3>Architecture & System Design</h3>
-        <p>
-            Designing modular, testable, and scalable iOS codebases using Clean Architecture,
-            protocol-oriented design, and structural patterns suited for long-lived enterprise systems.
-        </p>
+        <ul class="card-list">
+            <li>Clean Architecture & modular feature isolation</li>
+            <li>MVVM with strict dependency inversion</li>
+            <li>Protocol-oriented domain boundaries</li>
+            <li>Scalable folder structures for enterprise codebases</li>
+            <li>Testability-first design</li>
+        </ul>
     </div>
 
     <div class="card">
         <span class="material-symbols-rounded icon-large">devices</span>
-        <h3>Modern Apple Platform</h3>
-        <p>
-            Deep expertise in Swift, SwiftUI, UIKit, Combine, and Swift Concurrency —
-            implemented with strict thread-safety discipline and memory management awareness.
-        </p>
+        <h3>Modern Apple Platform Engineering</h3>
+        <ul class="card-list">
+            <li>Swift, SwiftUI, UIKit interoperability</li>
+            <li>Structured Concurrency (async/await, actors)</li>
+            <li>Combine & reactive state management</li>
+            <li>Advanced memory & lifecycle control</li>
+            <li>Performance profiling with Instruments</li>
+        </ul>
     </div>
 
     <div class="card">
         <span class="material-symbols-rounded icon-large">shield</span>
-        <h3>Security & Reliability</h3>
-        <p>
-            Building compliance-aware systems with secure networking layers,
-            offline-first strategies, resilient API integrations,
-            and CI/CD pipelines designed for enterprise reliability.
-        </p>
+        <h3>Security, Reliability & Delivery</h3>
+        <ul class="card-list">
+            <li>Secure networking & certificate pinning</li>
+            <li>Offline-first architecture strategies</li>
+            <li>CI/CD automation pipelines</li>
+            <li>Enterprise & App Store distribution</li>
+            <li>Crash diagnostics & observability</li>
+        </ul>
     </div>
 
 </section>
@@ -105,6 +109,5 @@
     </div>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
