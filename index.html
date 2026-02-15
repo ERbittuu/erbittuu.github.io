@@ -1,99 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Utsav Patel | Senior iOS Engineer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Senior iOS Engineer specializing in secure, scalable enterprise and financial systems. Open to consulting.">
-    <link rel="stylesheet" href="styles.css">
+
+    <meta name="description"
+          content="Senior iOS Engineer specializing in secure, scalable enterprise and financial systems. Architecture-driven. Consulting available." />
+
+    <meta name="theme-color" content="#f3f6fb" />
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Utsav Patel | Senior iOS Engineer" />
+    <meta property="og:description" content="Architecture-driven iOS systems. Secure. Scalable. Enterprise-ready." />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<header class="nav">
-    <div class="container">
-        <div class="brand">Utsav Patel</div>
-        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">
-            <span id="themeIcon">🌙</span>
-        </button>
+<header class="header">
+    <div class="container header-inner">
+        <div class="brand-block">
+            <div class="name">Utsav Patel</div>
+            <div class="role">Senior iOS Engineer</div>
+        </div>
+
+        <nav class="nav-links" aria-label="Primary Navigation">
+            <a href="#about">About</a>
+            <a href="#expertise">Expertise</a>
+            <a href="#contact">Contact</a>
+
+            <a href="https://github.com/ERbittuu" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/erbittuu/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+
+            <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">
+                <span id="themeIcon">🌙</span>
+            </button>
+        </nav>
     </div>
 </header>
 
-<main class="container center">
+<main>
 
-    <section class="hero">
-        <h1>Senior iOS Engineer</h1>
-        <p class="tagline">
-            Secure, scalable enterprise & financial systems on Apple platforms
-        </p>
+<section class="hero container">
+    <h1>
+        Architecture-Driven iOS Systems.<br />
+        Secure. Scalable. Enterprise-Ready.
+    </h1>
 
-        <div class="cta">
-            <a href="mailto:utsavhacker@gmail.com" class="primary-btn">
-                Contact
-            </a>
-            <a href="https://github.com/ERbittuu" target="_blank" class="secondary-btn">
-                GitHub
-            </a>
-        </div>
-    </section>
+    <p class="hero-sub">
+        12+ years designing and delivering high-reliability financial
+        and enterprise applications across Apple platforms with strong
+        emphasis on clean architecture, concurrency safety,
+        performance engineering, and long-term maintainability.
+    </p>
 
-    <section class="about">
+    <a href="mailto:utsavhacker@gmail.com" class="primary-btn">
+        Get in Touch
+    </a>
+</section>
+
+<section id="about" class="about container">
+    <div class="about-left">
         <h2>About</h2>
         <p>
-            12+ years of architecting and building high-reliability iOS applications
-            with emphasis on clean architecture, concurrency safety, and performance.
+            I build production-grade iOS systems focused on modular design,
+            structured concurrency, performance optimization, and
+            compliance-driven development tailored for enterprise and
+            banking environments.
         </p>
-        <p class="consulting">
-            Open to architecture consulting and technical advisory.
+        <p>
+            My engineering approach prioritizes scalability,
+            thread safety, resilient networking layers,
+            offline-first strategies, and disciplined CI/CD pipelines
+            to ensure reliability at scale.
         </p>
-    </section>
+    </div>
 
-    <section class="grid expertise">
-        <div class="card">
-            <h3>Architecture</h3>
-            <ul>
-                <li>Clean Architecture</li>
-                <li>Modular Systems</li>
-                <li>Protocol-Oriented Design</li>
-            </ul>
+    <div class="about-right">
+        <div class="stat">
+            <div class="stat-value">12+ Years</div>
+            <div class="stat-label">iOS Engineering Experience</div>
         </div>
-        <div class="card">
-            <h3>Platform</h3>
-            <ul>
-                <li>Swift · SwiftUI · UIKit</li>
-                <li>Combine · Async/Await</li>
-                <li>Performance & Memory</li>
-            </ul>
+        <div class="stat">
+            <div class="stat-value">Enterprise & Banking</div>
+            <div class="stat-label">Domain Expertise</div>
         </div>
-        <div class="card">
-            <h3>Domain</h3>
-            <ul>
-                <li>Enterprise & Banking</li>
-                <li>Secure Networking</li>
-                <li>Compliance Systems</li>
-            </ul>
+        <div class="stat">
+            <div class="stat-value">Architecture Consulting</div>
+            <div class="stat-label">Advisory & System Reviews</div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="two-column">
-        <div class="writing">
-            <h2>Writing</h2>
-            <p>Insights on architecture, performance, and scalable iOS systems.</p>
-            <a href="https://medium.com/@erbittuu" target="_blank" class="link-btn">Medium</a>
-            <a href="https://www.linkedin.com/in/erbittuu/" target="_blank" class="link-btn">LinkedIn</a>
-        </div>
+<section id="expertise" class="expertise container">
+    <h2>Core Expertise</h2>
 
-        <div class="contact">
-            <h2>Contact</h2>
-            <a href="mailto:utsavhacker@gmail.com" class="link-btn">utsavhacker@gmail.com</a>
-            <a href="https://github.com/ERbittuu" target="_blank" class="link-btn">GitHub</a>
-        </div>
-    </section>
+    <div class="expertise-grid">
+        <article class="expertise-card">
+            <h3>Architecture & System Design</h3>
+            <p>Clean Architecture, modular systems, scalable structure for enterprise apps.</p>
+        </article>
+
+        <article class="expertise-card">
+            <h3>Modern Apple Platform</h3>
+            <p>Swift, SwiftUI, UIKit, Combine, async/await, actors — implemented with discipline.</p>
+        </article>
+
+        <article class="expertise-card">
+            <h3>Security & Reliability</h3>
+            <p>Secure networking, compliance-aware systems, offline-first resilience.</p>
+        </article>
+    </div>
+</section>
+
+<section id="contact" class="contact container">
+    <h2>Contact</h2>
+
+    <p class="hero-sub">
+        Available for architecture consulting, technical advisory,
+        system design reviews, and performance audits.
+    </p>
+
+    <div class="contact-grid">
+        <a href="mailto:utsavhacker@gmail.com" class="contact-btn">
+            📩 utsavhacker@gmail.com
+        </a>
+        <a href="https://github.com/ERbittuu" target="_blank" rel="noopener noreferrer" class="contact-btn">
+            💻 GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/erbittuu/" target="_blank" rel="noopener noreferrer" class="contact-btn">
+            🔗 LinkedIn
+        </a>
+        <a href="https://medium.com/@erbittuu" target="_blank" rel="noopener noreferrer" class="contact-btn">
+            ✍️ Medium
+        </a>
+    </div>
+</section>
 
 </main>
 
-<footer>
+<footer class="footer">
     <div class="container footer-inner">
-        © 2026 Utsav Patel
+        <div>© 2026 Utsav Patel</div>
+        <div>Architecture · Performance · Secure Mobile Systems</div>
     </div>
 </footer>
 
