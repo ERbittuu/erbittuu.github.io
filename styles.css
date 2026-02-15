@@ -5,16 +5,31 @@
     --muted: #94a3b8;
     --primary: #3b82f6;
     --border: #1f2937;
-    --radius: 14px;
+    --header-height: 70px;
+    --footer-height: 60px;
+}
+
+[data-theme="light"] {
+    --bg: #f8fafc;
+    --surface: #ffffff;
+    --text: #0f172a;
+    --muted: #64748b;
+    --border: #e2e8f0;
 }
 
 * { box-sizing: border-box; }
+
+html, body {
+    height: 100%;
+}
 
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
     background: var(--bg);
     color: var(--text);
+    display: flex;
+    flex-direction: column;
 }
 
 /* Layout */
@@ -25,49 +40,46 @@ body {
     padding: 0 20px;
 }
 
+main {
+    flex: 1;
+}
+
 /* Header */
 
 .header {
-    position: sticky;
-    top: 0;
+    height: var(--header-height);
     background: var(--surface);
     border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
 }
 
 .header-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 0;
-}
-
-.icon-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.icon {
-    width: 22px;
-    height: 22px;
-    stroke: var(--text);
-    fill: none;
-    stroke-width: 1.5;
-}
-
-.icon-large {
-    width: 32px;
-    height: 32px;
-    stroke: var(--primary);
-    fill: none;
-    stroke-width: 1.5;
-    margin-bottom: 10px;
+    width: 100%;
 }
 
 .nav {
     display: flex;
-    gap: 18px;
+    gap: 20px;
     align-items: center;
+}
+
+.icon-link,
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text);
+}
+
+.material-symbols-rounded {
+    font-size: 22px;
 }
 
 /* Hero */
@@ -78,16 +90,14 @@ body {
 }
 
 .hero h1 {
-    font-size: clamp(40px, 5vw, 58px);
+    font-size: clamp(42px, 5vw, 60px);
     line-height: 1.1;
-    margin-bottom: 20px;
 }
 
 .hero-sub {
     font-size: 20px;
+    margin-top: 20px;
     color: var(--muted);
-    max-width: 750px;
-    margin: 0 auto;
 }
 
 .hero-meta {
@@ -111,18 +121,32 @@ body {
 .card {
     background: var(--surface);
     padding: 22px;
-    border-radius: var(--radius);
+    border-radius: 12px;
     border: 1px solid var(--border);
+}
+
+.icon-large {
+    font-size: 32px;
+    color: var(--primary);
+    margin-bottom: 10px;
 }
 
 /* Footer */
 
 .footer {
-    padding: 25px 0;
+    height: var(--footer-height);
     border-top: 1px solid var(--border);
+    background: var(--surface);
+    display: flex;
+    align-items: center;
+}
+
+.footer-inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     font-size: 14px;
     color: var(--muted);
-    text-align: center;
 }
 
 /* Responsive */
