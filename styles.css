@@ -1,7 +1,6 @@
 :root {
     --bg: #0b1220;
     --surface: #111827;
-    --surface-soft: #0f172a;
     --text: #f1f5f9;
     --muted: #94a3b8;
     --primary: #3b82f6;
@@ -16,7 +15,6 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
     background: var(--bg);
     color: var(--text);
-    line-height: 1.6;
 }
 
 /* Layout */
@@ -40,78 +38,19 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
+    padding: 16px 0;
 }
 
-.nav {
+.icon-link {
     display: flex;
-    gap: 24px;
     align-items: center;
-}
-
-.nav a {
-    text-decoration: none;
-    color: var(--text);
-    font-size: 15px;
-}
-
-.btn-outline {
-    padding: 6px 14px;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-}
-
-/* Hero */
-
-.hero {
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 40px;
-    padding: 60px 0 30px;
-}
-
-.hero h1 {
-    font-size: clamp(36px, 4vw, 52px);
-    line-height: 1.1;
-}
-
-.hero-sub {
-    font-size: 18px;
-    margin-top: 20px;
-    color: var(--muted);
-}
-
-.btn-primary {
-    margin-top: 20px;
-    padding: 12px 22px;
-    background: var(--primary);
-    color: white;
-    border-radius: var(--radius);
-    text-decoration: none;
-}
-
-/* Stats */
-
-.stat-card {
-    background: var(--surface);
-    border-radius: var(--radius);
-    padding: 20px;
-    border: 1px solid var(--border);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.stat {
-    display: flex;
-    gap: 14px;
-    align-items: center;
+    justify-content: center;
 }
 
 .icon {
-    width: 24px;
-    height: 24px;
-    stroke: var(--primary);
+    width: 22px;
+    height: 22px;
+    stroke: var(--text);
     fill: none;
     stroke-width: 1.5;
 }
@@ -125,13 +64,39 @@ body {
     margin-bottom: 10px;
 }
 
-.stat-title {
-    font-weight: 600;
+.nav {
+    display: flex;
+    gap: 18px;
+    align-items: center;
 }
 
-.stat-sub {
-    font-size: 14px;
+/* Hero */
+
+.hero {
+    padding: 80px 0 50px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 5vw, 58px);
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-sub {
+    font-size: 20px;
     color: var(--muted);
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.hero-meta {
+    margin-top: 25px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    font-size: 14px;
+    color: var(--primary);
 }
 
 /* Expertise */
@@ -140,56 +105,31 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 20px;
-    padding: 30px 0 40px;
+    padding: 40px 0 60px;
 }
 
 .card {
     background: var(--surface);
-    padding: 20px;
+    padding: 22px;
     border-radius: var(--radius);
     border: 1px solid var(--border);
-}
-
-/* About + Contact */
-
-.about,
-.contact {
-    padding: 40px 0;
-}
-
-.about h2,
-.contact h2 {
-    font-size: 28px;
-}
-
-.contact-row {
-    margin-top: 15px;
-    display: flex;
-    gap: 20px;
-}
-
-.contact-row a {
-    color: var(--primary);
-    text-decoration: none;
 }
 
 /* Footer */
 
 .footer {
-    padding: 20px 0;
+    padding: 25px 0;
     border-top: 1px solid var(--border);
     font-size: 14px;
     color: var(--muted);
+    text-align: center;
 }
 
 /* Responsive */
 
 @media (max-width: 900px) {
-    .hero {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-row {
+    .hero-meta {
         flex-direction: column;
+        gap: 10px;
     }
 }

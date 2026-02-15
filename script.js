@@ -11,9 +11,7 @@
 
     function initTheme() {
         const saved = localStorage.getItem("theme");
-        if (saved) {
-            applyTheme(saved);
-        }
+        if (saved) applyTheme(saved);
     }
 
     toggle?.addEventListener("click", () => {
